@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-11-slim as build
+FROM maven:3.6.2-jdk-11-slim as build
 WORKDIR /opt/demo
 COPY . /opt/demo
 RUN mvn package -DskipTests
